@@ -240,4 +240,26 @@ console.log(
     ])
 );
 
+/**
+ * Пример8:
+ */
+let result8 = calculateLeaderboardPlaces(
+    [
+        { userId: "id1", score: 13 },
+        { userId: "id2", score: 12 },
+        { userId: "id3", score: 11 },
+        { userId: "id4", score: 5 }
+    ],
+    { firstPlaceMinScore: 100, secondPlaceMinScore: 50, thirdPlaceMinScore: 10 }
+);
+console.log(
+    "test8",
+    checkResult(result8, [
+        { userId: "id1", place: 3 },
+        { userId: "id2", place: 4 },
+        { userId: "id3", place: 5 },
+        { userId: "id4", place: 6 }
+    ])
+);
+
 console.log("-----------------------------------------------------");
